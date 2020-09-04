@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-color: #f2f2f2; }
+
+header {
+  background-color: #6fa06f;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 -10px 20px #3e3e3e;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  header ul li a {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #3e3e3e;
+    text-decoration: none;
+    line-height: 1.5em;
+    text-align: justify; }
+
+#centerContent {
+  max-width: 1440px;
+  margin: auto;
+  margin-top: 170px; }
+
+h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #3e3e3e;
+  text-decoration: none;
+  line-height: 1.5em;
+  text-align: justify;
+  font-size: 50px;
+  text-align: center; }
+
+h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #3e3e3e;
+  text-decoration: none;
+  line-height: 1.5em;
+  text-align: justify;
+  font-size: 40px;
+  text-align: center;
+  margin: 25px; }
+
+h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #3e3e3e;
+  text-decoration: none;
+  line-height: 1.5em;
+  text-align: justify;
+  margin: 25px; }
+
+h4 {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #3e3e3e;
+  text-decoration: none;
+  line-height: 1.5em;
+  text-align: justify; }
+
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #3e3e3e;
+  text-decoration: none;
+  line-height: 1.5em;
+  text-align: justify; }
+
+figcaption {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #3e3e3e;
+  text-decoration: none;
+  line-height: 1.5em;
+  text-align: justify; }
+
+li {
+  display: inline-block; }
+  li a {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #3e3e3e;
+    text-decoration: none;
+    line-height: 1.5em;
+    text-align: justify;
+    padding: 25px 50px;
+    display: inline-block;
+    text-align: center;
+    background-image: linear-gradient(45deg, #7eaa7e, #8eb48e); }
+    li a:hover {
+      background-image: linear-gradient(45deg, #9dbe9d, #8eb48e); }
+
+img {
+  width: 100%; }
+
+figure {
+  max-width: 1440px;
+  margin: auto;
+  margin-bottom: 25px; }
+
+footer {
+  background-color: #6fa06f;
+  padding-top: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  footer p {
+    text-align: center; }
+
+@media only screen and (max-width: 1200px) {
+  header {
+    flex-direction: column; } }
+
+/*# sourceMappingURL=style.css.map */

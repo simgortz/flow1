@@ -1,0 +1,125 @@
+$brandBackgroundColor: #f2f2f2;
+$brandMainColor: #6fa06f;
+$brandFontColor: #3e3e3e;
+$maxWidth: 1440px;
+$defaultMargin: 25px;
+$buttonGradient: linear-gradient(45deg, (lighten($brandMainColor, 5%)), (lighten($brandMainColor, 10%)));
+$buttonGradientReverse: linear-gradient(45deg, (lighten($brandMainColor, 15%)), (lighten($brandMainColor, 10%)));
+
+@mixin brandFont {
+    font-family: Helvetica, Arial, sans-serif;
+    color: $brandFontColor;
+    text-decoration: none;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+@mixin center {
+    margin: auto;
+}
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: $brandBackgroundColor;
+}
+
+header{
+    background-color: $brandMainColor;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 -10px 20px $brandFontColor;
+    @include center;
+    @include flex;
+    ul li a{
+        @include brandFont;
+    }
+}
+
+#centerContent{
+    max-width: $maxWidth;
+    @include center;
+    margin-top: 170px;
+}
+
+h1{
+    @include brandFont;
+    font-size: 50px;
+    text-align: center;
+}
+
+h2{
+    @include brandFont;
+    font-size: 40px;
+    text-align: center;
+    margin: $defaultMargin;
+}
+
+h3{
+    @include brandFont;
+    margin: $defaultMargin;
+}
+
+h4{
+    @include brandFont;
+}
+
+p{
+    @include brandFont;
+}
+
+figcaption{
+    @include brandFont;
+}
+
+li{
+    display: inline-block;
+
+    a{
+        @include brandFont;
+        padding: 25px 50px;
+        display: inline-block;
+        text-align: center;
+        background-image: $buttonGradient;
+        &:hover{
+            background-image: $buttonGradientReverse;
+        }
+    }
+}
+
+img{
+    width: 100%;
+}
+
+figure{
+    max-width: 1440px;
+    @include center;
+    margin-bottom: $defaultMargin;
+}
+
+footer{
+    background-color: $brandMainColor;
+    padding-top: $defaultMargin;
+    @include flex;
+    p{
+        text-align: center;
+    }
+    
+}
+
+@media only screen and (max-width: 1200px) {
+    header{
+        flex-direction: column;
+    }
+
+}
